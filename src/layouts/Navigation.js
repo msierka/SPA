@@ -1,8 +1,24 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../styles/Navigation.css';
+const list = [
+    {name: 'start',path: '/',exact: true},
+    {name: 'produkty',path: 'produkty'},
+    {name: 'kontakt',path: 'kontakt'},
+    {name: 'panel adnim',path: 'panel-admin'}]
 
 const Navigation = () => {
+    const menu = list.map(item => (
+        <li key={item.name}>
+            <NavLink to={item.path} exact={item.exact ? item.exact : false}> {item.name}</NavLink>
+        </li>
+    )) 
     return ( 
-        <div>Nav</div>
+        <nav className="main">
+            <ul>
+                {menu}
+            </ul>
+        </nav>
      );
 }
  
