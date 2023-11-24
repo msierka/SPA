@@ -2,10 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/Navigation.css';
 const list = [
-    {name: 'start',path: '/',exact: true},
-    {name: 'produkty',path: 'produkty'},
-    {name: 'kontakt',path: 'kontakt'},
-    {name: 'panel adnim',path: 'panel-admin'}]
+    {name: 'start',path: '/', exact: true},
+    {name: 'produkty',path: '/produkty'},
+    {name: 'kontakt',path: '/kontakt'},
+    {name: 'panel adnim',path: '/panel-admin'}]
 
 const Navigation = () => {
     const menu = list.map(item => (
