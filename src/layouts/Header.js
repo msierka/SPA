@@ -10,6 +10,7 @@ const Home = () => <img src={img1} alt="img1" />;
 const Produkty = () => <img src={img2} alt="img2" />;
 const Kontakt = () => <img src={img3} alt="img3" />;
 const PanelAdmin = () => <img src={img1} alt="img1" />;
+const AdminPanel = () => <img src={img1} alt="img1" />;
 
 const Header = () => {
   return (
@@ -18,6 +19,7 @@ const Header = () => {
       <Route path="/produkty" element={<Produkty />} />
       <Route path="/kontakt" element={<Kontakt />} />
       <Route path="/panel-admin" element={<PanelAdmin />} />
+      <Route path="/login" element={<AdminPanel />} />
     </Routes>
   );
 };
