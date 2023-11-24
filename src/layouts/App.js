@@ -15,9 +15,9 @@ class App extends Component {
           <Header/>
         </header>
         <main>
-          <nav>
+          <aside>
             <Navigation/>
-          </nav>
+          </aside>
           <section>
             <Page/>
           </section>
